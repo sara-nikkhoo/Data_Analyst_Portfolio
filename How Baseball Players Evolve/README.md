@@ -1,4 +1,4 @@
-# ⚾ MLB SQL Analysis
+# ⚾ MLB SQL Analysis (Major League Baseball)
 
 This project analyzes historical baseball player data using SQL to explore how player development, salaries, careers, and attributes have evolved over time.
 
