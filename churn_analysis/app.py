@@ -48,7 +48,7 @@ with st.sidebar:
 # 4. Main
 col1, col2 = st.columns([0.1, 0.9])
 with col1:
-    st.image("pic.svg", width=80)
+    st.image("churn_analysis/pic.svg", width=80)
 with col2:
     st.title("Customer Churn Early Warning System")
 
