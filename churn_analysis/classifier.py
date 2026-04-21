@@ -10,7 +10,7 @@ def train_pipeline():
     # 1. Load Data
     try:
         # Using the exact file name from your analysis script
-        df = pd.read_csv("churn.csv")
+        df = pd.read_csv("churn_analysis/churn.csv")
         logger.info("Data loaded from churn.csv")
     except FileNotFoundError:
         logger.warning("churn.csv not found")
@@ -58,9 +58,6 @@ def train_pipeline():
     # Saving features ensures the Streamlit app uses the exact same column order
     joblib.dump({"model": model, "features": list(X.columns)}, "prediction_model.sav")
     
-    # Save X_test as CSV for testing purposes
-    X_test.to_csv("X_test.csv", index=False)
-    logger.info("X_test saved to X_test.csv")
     
     logger.info("ML model and feature list saved to prediction_model.sav")
 
