@@ -121,10 +121,3 @@ The model is trained on customer churn data with features including:
 4. Test thoroughly
 5. Submit a pull request
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## Contact
-
-For questions or feedback, please open an issue in the repository.
