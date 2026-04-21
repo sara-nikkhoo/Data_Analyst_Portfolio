@@ -20,7 +20,7 @@ st.markdown("""
 # 2. Robust Artifact Loading
 @st.cache_resource
 def load_artifacts():
-    artifact = joblib.load("prediction_model.sav")
+    artifact = joblib.load("churn_analysis/prediction_model.sav")
     return artifact["model"], artifact["features"]
 
 
@@ -60,8 +60,8 @@ else:
     if uploaded_file is not None:
         df_raw = pd.read_csv(uploaded_file)
         st.info("Using uploaded dataset.")
-    elif os.path.exists("churn_test.csv"):
-        df_raw = pd.read_csv("churn_test.csv")
+    elif os.path.exists("churn_analysis/churn_test.csv"):
+        df_raw = pd.read_csv("churn_analysis/churn_test.csv")
         st.caption("Using default dataset: churn.csv")
     
     
