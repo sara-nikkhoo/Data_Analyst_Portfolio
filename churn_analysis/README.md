@@ -113,11 +113,6 @@ The model is trained on customer churn data with features including:
 └── README.md            # This file
 ```
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+## 
+https://dataanalystportfolio-zvpztyyhfka3ind7mb5fij.streamlit.app/
 
